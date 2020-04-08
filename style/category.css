@@ -1,0 +1,25 @@
+.Category {
+    height: 30vh;
+    margin-top: 5%;
+    margin-left: 11%;
+    margin-right: 10%;
+}
+
+.Category__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.Category__title h1 {
+    font-family: Arial;
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .Category__title h1 {
+        font-size: 20px;
+    }
+}

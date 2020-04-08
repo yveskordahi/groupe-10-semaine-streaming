@@ -1,0 +1,33 @@
+.News {
+    height: 50vh;
+    margin-top: 5%;
+}
+
+.News__title {
+    display: flex;
+    justify-content: start;
+    margin-left: 11%;
+}
+
+.News__title h1 {
+    font-family: Arial;
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.slick-slide {
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .News__title {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .News__title h1 {
+        font-size: 20px;
+    }
+}

@@ -9,8 +9,13 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/homepage.css">
+    <link rel="stylesheet" href="style/news.css">
+    <link rel="stylesheet" href="style/category.css">
     <title>Casa Stream</title>
 </head>
 <body>
@@ -52,15 +57,15 @@
                   <a class="dropdown-item" href="#">Action/Aventure</a>
                   <a class="dropdown-item" href="#">Amour</a>
                   <a class="dropdown-item" href="#">Comédie</a>
-                  <a class="dropdown-item" href="#">Drame</a>
                   <a class="dropdown-item" href="#">Guerre</a>
                   <a class="dropdown-item" href="#">Histoire/Documentaire</a>
                   <a class="dropdown-item" href="#">Horreur</a>
                 </div>
-              </li>  
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
               </li>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+                <button class="btn" type="submit"><img class="button__search" src="assets/img/search.svg" alt="button rechercher"></button>
+              </form>
               <li class="nav-item btn__login">
               <a class="boutton__login" href="#"><button class="btn btn-primary">S'identifier</button></a>
               </li>
@@ -71,7 +76,45 @@
     </header>
 
     <main>
-        <div class="test"></div>
+        <section class="homepage">
+            <div class="homepage__container-img">
+                <div class="display-desktop">
+                    <img class="homepage__bg" src="assets/img/homepage-bg.jpg" alt="background image of casa stream">
+                </div>
+                <div class="display-mobile">
+                    <img class="homepage__bg" src="assets/img/homepage-mobile.jpg" alt="background image of casa stream">
+                </div>
+                <div class="homepage__text-description">
+                    <img class="logo-casa-de-papel" src="assets/img/logo-casa-de-papel.png" alt="logo de la casa de papel">
+                    <h2 class="title__casa-de-papel">La casa de papel</h2>
+                    <p class="info__casa-de-papel">2017 | 16+ | 4 saisons | Séries espagnoles</p>
+                    <p class="resume__casa-de-papel">Huit voleurs font une prise d'otages dans la Maison royale de la Monnaie d'Espagne, 
+                    tandis qu'un génie du crime manipule la police pour mettre son plan à exécution.</p>
+                    <a href=""><button class="btn btn-primary">Regarder</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="Category">
+            <div class="Category__title">
+                <h1>Découvrez notre catalogue de genre</h1>
+            </div>
+            <div class="responsive">
+                <div><img src="assets/img/test.jpg" alt=""></div>
+                <div><img src="assets/img/test.jpg" alt=""></div>
+                <div><img src="assets/img/test.jpg" alt=""></div>
+                <div><img src="assets/img/test.jpg" alt=""></div>
+                <div><img src="assets/img/test.jpg" alt=""></div>
+                <div><img src="assets/img/test.jpg" alt=""></div>
+              </div>
+        </section>
+
+        <section class="News">
+            <div class="News__title">
+                <h1>La sélection Casa Films</h1>
+            </div>
+            
+        </section>
     </main>
 
     <script
@@ -81,5 +124,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
+    <script src="script/navbar.js"></script>
 </body>
 </html>
