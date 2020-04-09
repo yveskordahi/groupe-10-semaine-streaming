@@ -1,0 +1,31 @@
+.port-image
+{
+    width: 100%;
+}
+
+.slider__news-img__desktop {
+    width: 350px;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .slider__news-img__desktop {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .slider__news-img__desktop {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .display-desktop-news {
+        display: none;
+    }
+}
