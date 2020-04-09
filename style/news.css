@@ -30,4 +30,9 @@
     .News__title h1 {
         font-size: 20px;
     }
+
+    .News {
+        height: 50vh;
+        margin-top: 12%;
+    }
 }

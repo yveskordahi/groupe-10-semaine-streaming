@@ -18,8 +18,20 @@
     font-size: 32px;
 }
 
+.slick-dots li.slick-active button::before {
+    color: #fff;
+}
+
+.slick-dots li button::before {
+    color: #c1c1c1;
+}
+
 @media screen and (max-width: 768px) {
     .Category__title h1 {
-        font-size: 20px;
+        font-size: 17px;
+    }
+
+    .Category {
+        margin-top: 10%;
     }
 }
