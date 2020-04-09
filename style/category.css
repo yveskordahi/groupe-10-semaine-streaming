@@ -52,6 +52,10 @@
         margin-top: 15%;
     }
 
+    .slider__categorie {
+        width: 100%;
+    }
+
     .slick-dots {
         width: 100%;
 }
