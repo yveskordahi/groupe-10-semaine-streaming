@@ -1,0 +1,37 @@
+.navbar-container {
+    height: 100px;
+}
+
+main {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+p {
+    color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+ 
+  .img__categorie-films {
+      width: 100%;
+      height: 80%;
+  }
+
+  .News__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    color: white;
+    font-family: 'Arial';
+}
+
+@media screen and (max-width: 768px) {
+    .News__title h1 {
+        font-size: 20px;
+    }
+}
