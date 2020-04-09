@@ -49,6 +49,12 @@
     top: 40%;
 }
 
+@media screen and (max-width: 1024px) {
+    .slider__categorie-img:hover {
+        transform: scale(1);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .Category__title h1 {
         font-size: 17px;
