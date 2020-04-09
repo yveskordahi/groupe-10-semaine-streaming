@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 1024px) {
     .slider__categorie-img:hover {
-        transform: scale(1);
+        transform: none;
     }
 }
 
