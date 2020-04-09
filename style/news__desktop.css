@@ -5,6 +5,11 @@
 
 .slider__news-img__desktop {
     width: 350px;
+    transition: all .2s ease-in-out;
+}
+
+.slider__news-img__desktop:hover {
+    transform: scale(1.1);
 }
 
 .gallery_product
@@ -15,6 +20,12 @@
 @media screen and (max-width: 1200px) {
     .slider__news-img__desktop {
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .slider__news-img__desktop:hover {
+        transform: none;
     }
 }
 
