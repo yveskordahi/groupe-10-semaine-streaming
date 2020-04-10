@@ -19,7 +19,7 @@ p {
 }
 
 video {
-    display: block;
+    display: flex;
 }
 
 .film__info {
