@@ -18,12 +18,6 @@ p {
     width: 1000;
 }
 
-video {
-    display: inline-block;
-    margin:0;
-    padding:0;
-}
-
 .film__info {
     display: flex;
     justify-content: start;
