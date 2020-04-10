@@ -18,6 +18,10 @@ p {
     width: 1000;
 }
 
+video {
+    display: block;
+}
+
 .film__info {
     display: flex;
     justify-content: start;
@@ -50,7 +54,6 @@ p {
         width: 100%;
         height: auto;
     }
-    
 }
 
 @media screen and (max-width: 990px) {
