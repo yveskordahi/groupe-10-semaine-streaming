@@ -20,6 +20,11 @@ p {
   .img__categorie-films {
       width: 100%;
       height: 240px;
+      transition: all .2s ease-in-out;
+  }
+
+  .img__categorie-films:hover {
+    transform: scale(1.05);
   }
 
   .News__title {
@@ -28,6 +33,12 @@ p {
     margin-bottom: 3%;
     color: white;
     font-family: 'Arial';
+}
+
+@media screen and (max-width: 1024px) {
+    .img__categorie-films:hover {
+        transform: none;
+      }
 }
 
 @media screen and (max-width: 768px) {

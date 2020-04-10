@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 3%;
+    text-align: center;
 }
 
 .Category__title h1 {
@@ -26,7 +27,7 @@
 }
 
 .slider__categorie-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .slider__categorie {

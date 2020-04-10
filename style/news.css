@@ -3,14 +3,11 @@
     margin-top: 5%;
 }
 
-.News-2 {
-    margin-top: 2%;
-}
-
 .News__title {
     display: flex;
     justify-content: center;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
+    margin-top: 3%;
 }
 
 .News__title h1 {
@@ -76,6 +73,11 @@
 }
 
 @media screen and (max-width: 768px) {
+    .News__title {
+        justify-content: start;
+        margin-left: 10px;
+    }
+
     .News__title h1 {
         font-size: 20px;
     }
