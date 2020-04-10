@@ -8,3 +8,10 @@ body {
 button {
     font-family: 'Arial';
 }
+
+.footer {
+    width: 100%;
+    color: white;
+    text-align: center;
+ }
+

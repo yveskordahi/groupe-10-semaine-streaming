@@ -3,6 +3,10 @@ body{
     font-size: 16px;
   }
 
+  .main-subscribe {
+    height: 65%;
+  }
+
   .form__title {
       color: #fff;
       font-size: 2rem;
@@ -67,4 +71,10 @@ body{
     color: #fff;
     background-color: #0069d9;
     border-color: #0062cc;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-subscribe {
+    height: 75%;
+  }
 }
