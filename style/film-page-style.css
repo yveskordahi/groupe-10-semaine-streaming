@@ -14,6 +14,10 @@ p {
     margin-top: 3%;
 }
 
+.film__video-setting {
+    width: 1000;
+}
+
 .film__info {
     display: flex;
     justify-content: start;
@@ -41,6 +45,12 @@ p {
     .film__info {
         margin-left: 0;
     }
+
+    .film__video-setting {
+        width: 100%;
+        height: auto;
+    }
+    
 }
 
 @media screen and (max-width: 990px) {
