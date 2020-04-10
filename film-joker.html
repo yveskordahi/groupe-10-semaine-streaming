@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/film.css">
+    <link rel="stylesheet" href="style/film-page-style.css">
     <title>Casa Stream</title>
 </head>
 <body>
@@ -55,7 +56,7 @@
                 <button class="btn" type="submit"><img class="button__search" src="assets/img/search.svg" alt="button rechercher"></button>
               </form>
               <li class="nav-item btn__login">
-              <a class="boutton__login" href="#"><button class="btn btn-primary">S'identifier</button></a>
+              <a class="boutton__login" href="subscribe.html"><button class="btn btn-primary">S'identifier</button></a>
               </li>
           </ul>
         </div>
@@ -65,8 +66,32 @@
 
 
     <main>
-        
-
+      <div class="container">
+        <div class="film__title">
+          <h2>Film - Joker</h2>
+        </div>
+        <div class="film__video">
+          <video controls width="1000">
+            <source src="assets/video/film-turc.mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+        </div>
+        <div class="film__info">
+          <div class="film__info__title">Joker</div>
+          <div class="film__info__desc">
+            <div><p class="first-info">Réalisateur:</p>  <p class="second-info">Todd Phillips</p> </div>
+            <div><p class="first-info">Acteurs:</p>  <p class="second-info">Joaquin Phoenix, Robert De Niro, Zazie Beetz</p> </div>
+            <div><p class="first-info">Genres:</p>  <p class="second-info">Film criminel/Drame</p> </div>
+            <div><p class="first-info">Résumé:</p>  <p class="second-info">L'histoire se déroule en 1981, à Gotham City. 
+              Arthur Fleck travaille dans une agence de clowns. Méprisé et incompris par ceux qui lui font face, 
+              il mène une morne vie en marge de la société et habite dans un immeuble miteux avec sa mère Penny. 
+              Un soir, il se fait agresser dans le métro par trois traders de Wayne Enterprise alcoolisés qui le brutalisent, 
+              le poussant à les tuer en retour. Son geste inspire à une partie de la population l'idée de s'en prendre eux aussi aux puissants. 
+              Dans cette société décadente, Arthur bascule peu à peu dans la folie et finit par devenir le Joker, 
+              un dangereux tueur psychopathe victime d'hallucinations et le plus grand criminel de Gotham City.</p> </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script

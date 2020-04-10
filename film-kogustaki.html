@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/film.css">
+    <link rel="stylesheet" href="style/film-page-style.css">
     <title>Casa Stream</title>
 </head>
 <body>
@@ -55,7 +56,7 @@
                 <button class="btn" type="submit"><img class="button__search" src="assets/img/search.svg" alt="button rechercher"></button>
               </form>
               <li class="nav-item btn__login">
-              <a class="boutton__login" href="#"><button class="btn btn-primary">S'identifier</button></a>
+              <a class="boutton__login" href="subscribe.html"><button class="btn btn-primary">S'identifier</button></a>
               </li>
           </ul>
         </div>
@@ -65,8 +66,32 @@
 
 
     <main>
-        
-
+      <div class="container">
+        <div class="film__title">
+          <h2>Film - Koğuştaki Mucize</h2>
+        </div>
+        <div class="film__video">
+          <video controls width="1000">
+            <source src="assets/video/film-turc.mp4">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+        </div>
+        <div class="film__info">
+          <div class="film__info__title">Koğuştaki Mucize</div>
+          <div class="film__info__desc">
+            <div><p class="first-info">Réalisateur:</p>  <p class="second-info">Mehmet Ada Öztekin</p> </div>
+            <div><p class="first-info">Acteurs:</p>  <p class="second-info">Aras Bulut İynemli, Nisa Sofiya Aksongur, Deniz Baysal</p> </div>
+            <div><p class="first-info">Genres:</p>  <p class="second-info">Amour/Drame</p> </div>
+            <div><p class="first-info">Résumé:</p>  <p class="second-info">Memo, un Berger souffrant d'un handicap mental, 
+              vit avec sa petite fille adorée et sa grand-mère dans un village de la côte Egéenne pendant la période du coup d'Etat. 
+              Un beau jour en 1983, la vie de Memo se voit subitement bouleversée quand la fille du commandant, un haut responable durant la loi martiale meurt. 
+              Memo est condamné à mort et se retrouve en prison dans la cellule numero sept. Il est peu probable qu'il y survive. 
+              Mais alors que tous ceux qui peuplent la cellule 7 l'avaient d'abord accueilli avec haine, 
+              commencent progressievement à être convaincu de son innocence en temoignant de son grand coeur. 
+              Avec le temps, tous ceux que Memo touche se mobilisent pour lui sauver la vie. </p> </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script

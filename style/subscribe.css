@@ -1,0 +1,70 @@
+body{
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+  }
+
+  .form__title {
+      color: #fff;
+      font-size: 2rem;
+  }
+
+  .login-form{
+    margin: auto;
+    width: 370px;
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .login-form .form-control{
+    font-size: 15px;
+    min-height: 48px;
+    font-weight: 500;
+  }
+
+  .login-form a{
+    text-decoration: none;
+    color:#666;
+  }
+
+  .login-form a:hover{
+    color:#007bff;
+  }
+
+  .forgot-link{
+    font-size: 13px;
+  }
+  
+  .form-control:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(61, 113, 190,.25);
+  }
+
+  .form-check__remember {
+      color: white;
+  }
+
+  .btn-custom{
+    background: #007bff;
+    border-color: #007bff;
+    color:#fff;
+    font-size: 15px;
+    font-weight: 600;
+    min-height: 48px;
+  }
+  .btn-custom:focus,
+  .btn-custom:hover,
+  .btn-custom:active,
+  .btn-custom:active:focus{
+    background: #007bff;
+    border-color: #007bff;
+    color:#fff;
+  }
+  .btn-custom:focus{
+    box-shadow: 0 0 0 0.2rem rgba(61, 113, 190, 0.25);
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
