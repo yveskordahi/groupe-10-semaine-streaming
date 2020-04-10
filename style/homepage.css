@@ -39,10 +39,6 @@
     font-family: Arial;
 }
 
-.susbcribe__casa-de-papel {
-    text-align: center;
-}
-
 .susbcribe-btn__casa-de-papel {
     text-decoration: underline;
     color: #007bff;
@@ -131,6 +127,10 @@
 
     .title__casa-de-papel {
         font-size: 20px;
+    }
+
+    .susbcribe__casa-de-papel {
+        text-align: center;
     }
 }
 
