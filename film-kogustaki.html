@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/film.css">
     <link rel="stylesheet" href="style/film-page-style.css">
+    <link rel="stylesheet" href="style/player.css">
     <title>Casa Stream</title>
 </head>
 <body>
@@ -71,10 +72,18 @@
           <h2>Film - Koğuştaki Mucize</h2>
         </div>
         <div class="film__video">
-          <video class="film__video-setting" controls poster="assets/img/poster-film-1.jpg">
+          <video id="my_video" class="film__video-setting" poster="assets/img/poster-film-1.jpg">
             <source src="assets/video/film-turc.mp4">
             Sorry, your browser doesn't support embedded videos.
-        </video>
+          </video>
+          <div id="video_controls_bar">
+            <button id="playpausebtn" class="play"></button>
+            <input id="seekslider" type="range" min="0" max="100" value="0" step="1">
+            <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+            <button id="mutebtn">Mute</button>
+            <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+            <button id="fullscreenbtn">[ &nbsp; ]</button>
+          </div>
         </div>
         <div class="film__info">
           <div class="film__info__title">Koğuştaki Mucize</div>
@@ -110,5 +119,6 @@
      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
     <script src="script/navbar.js"></script>
+    <script src="script/player.js"></script>
 </body>
 </html>

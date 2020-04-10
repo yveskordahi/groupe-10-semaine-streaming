@@ -10,8 +10,9 @@ p {
 
 .film__video {
     display: flex;
-    justify-content: center;
+    align-items: center;
     margin-top: 3%;
+    flex-direction: column;
 }
 
 .film__video-setting {

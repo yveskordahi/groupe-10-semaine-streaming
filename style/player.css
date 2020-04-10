@@ -1,0 +1,60 @@
+#video_controls_bar { 
+    background: #333; 
+    padding: 10px; 
+    color: #CCC; 
+    font-family: 'Arial';
+    width: 90%;
+}
+
+#playpausebtn {
+	background-image: url('../assets/img/btn-pause.svg');
+	border: none;
+	width: 42px;
+	height: 44px;
+	cursor: pointer;
+    opacity: 0.7;
+    background-color: rgba(0,0,0,0);
+}
+
+.play {
+    background-image: url('../assets/img/btn-pause.svg');
+}
+
+.pause {
+    background-image: url('../assets/img/btn-play.svg') !important;
+}
+
+button#playpausebtn:hover { 
+    opacity: 1; 
+}
+
+input#seekslider { 
+    width: 180px; 
+
+}
+input#volumeslider { 
+    width: 80px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background: #000;
+	border: #666 1px solid;
+    height: 4px;
+    cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #FFF;
+    height: 15px;
+    width: 15px;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    #video_controls_bar {
+        width: 100%;
+    }
+}
