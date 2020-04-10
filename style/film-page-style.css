@@ -19,7 +19,9 @@ p {
 }
 
 video {
-    display: flex;
+    display: inline-block;
+    margin:0;
+    padding:0;
 }
 
 .film__info {
