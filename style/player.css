@@ -130,11 +130,13 @@ input[type='range']::-webkit-slider-thumb {
     #mutebtn {
         width: 28px;
         height: 29px;
+        padding: 0;
     }
 
     #fullscreenbtn {
         width: 39px;
         height: 42px;
+        padding: 0;
     }
 }
 
