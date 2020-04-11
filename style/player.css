@@ -1,7 +1,15 @@
+a:focus {
+    outline:0;
+}
+
+button:focus {
+    outline: 0;
+}
+
 #video_controls_bar { 
-    background: #333; 
+    background: #000; 
     padding: 10px; 
-    color: #CCC; 
+    color: rgb(36, 183, 219); 
     font-family: 'Arial';
     width: 90%;
 }
@@ -16,16 +24,56 @@
     background-color: rgba(0,0,0,0);
 }
 
+#playpausebtn:hover { 
+    opacity: 1; 
+}
+
 .play {
     background-image: url('../assets/img/btn-pause.svg');
+    background-repeat: no-repeat;
 }
 
 .pause {
     background-image: url('../assets/img/btn-play.svg') !important;
+    background-repeat: no-repeat;
 }
 
-button#playpausebtn:hover { 
+#mutebtn {
+    background-image: url('../assets/img/mute.svg');
+	border: none;
+	width: 32px;
+	height: 34px;
+	cursor: pointer;
+    opacity: 0.7;
+    background-color: rgba(0,0,0,0);
+    padding-top: 7px;
+    margin-left: 10px;
+}
+
+#mutebtn:hover { 
     opacity: 1; 
+}
+
+.mute {
+    background-image: url('../assets/img/mute.svg');
+    background-repeat: no-repeat;
+}
+
+.unmute {
+    background-image: url('../assets/img/unmute.svg') !important;
+    background-repeat: no-repeat;
+}
+
+#fullscreenbtn {
+    background-image: url('../assets/img/fullscreen.svg');
+	border: none;
+	width: 42px;
+	height: 44px;
+	cursor: pointer;
+    opacity: 0.7;
+    background-color: rgba(0,0,0,0);
+    margin-left: 10px;
+    padding-top: 4px;
 }
 
 input#seekslider { 
@@ -38,8 +86,8 @@ input#volumeslider {
 
 input[type='range'] {
     -webkit-appearance: none !important;
-    background: #000;
-	border: #666 1px solid;
+    background: rgb(255, 255, 255);
+	border: rgb(36, 183, 219) 1px solid;
     height: 4px;
     cursor: pointer;
 }
@@ -56,5 +104,26 @@ input[type='range']::-webkit-slider-thumb {
 @media screen and (max-width: 1200px) {
     #video_controls_bar {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #video_controls_bar {
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .display-mobile {
+        display: none;
+    }
+
+    #mutebtn {
+        width: 28px;
+        height: 29px;
+    }
+
+    #fullscreenbtn {
+        width: 39px;
+        height: 42px;
     }
 }

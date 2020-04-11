@@ -10,16 +10,16 @@ function intializePlayer(){
 	volumeslider = document.getElementById("volumeslider");
 	fullscreenbtn = document.getElementById("fullscreenbtn");
 	
-    // playbtn.addEventListener("click",playPause,false);
-    playbtn.addEventListener("click", playPause);
+	playbtn.addEventListener("click", playPause, false);
+	mutebtn.addEventListener("click",vidmute,false);
+	fullscreenbtn.addEventListener("click",toggleFullScreen,false);
     vid.addEventListener("ended", function() {
-    playbtn.className = "play";
-    });
+	playbtn.className = "play";
+	mutebtn.className = 'mute';
+	});
 	seekslider.addEventListener("change",vidSeek,false);
 	vid.addEventListener("timeupdate",seektimeupdate,false);
-	mutebtn.addEventListener("click",vidmute,false);
 	volumeslider.addEventListener("change",setvolume,false);
-	fullscreenbtn.addEventListener("click",toggleFullScreen,false);
 }
 
 window.onload = intializePlayer;
@@ -34,11 +34,6 @@ function playPause() {
 		playbtn.className = "play";
 	}
 }
-
-// playbtn.addEventListener("click", playPause);
-// vid.addEventListener("ended", function() {
-//   playbtn.className = "play";
-// });
 
 function vidSeek() {
 	var seekto = vid.duration * (seekslider.value / 100);
@@ -63,11 +58,11 @@ function seektimeupdate() {
 function vidmute() {
 	if (vid.muted) {
 		vid.muted = false;
-        mutebtn.innerHTML = "Mute";
+		mutebtn.className = 'mute';
         
 	} else {
 		vid.muted = true;
-		mutebtn.innerHTML = "Unmute";
+		mutebtn.className = 'unmute';
 	}
 }
 
