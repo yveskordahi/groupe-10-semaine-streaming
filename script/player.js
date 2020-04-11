@@ -1,8 +1,12 @@
-var vid, playbtn, seekslider, curtimetext, durtimetext, mutebtn, volumeslider, fullscreenbtn;
+var vid, rewindButton, playbtn, fastForwardButton, seekslider, curtimetext, durtimetext, mutebtn, volumeslider, fullscreenbtn;
+// const rewindButton = document.querySelector('.rewind');
+// const fastForwardButton = document.querySelector('.fast-forward');
 function intializePlayer(){
 	
 	vid = document.getElementById("my_video");
+	rewindButton = document.getElementById("rewind");
 	playbtn = document.getElementById("playpausebtn");
+	fastForwardButton = document.getElementById("fast-forward");
 	seekslider = document.getElementById("seekslider");
 	curtimetext = document.getElementById("curtimetext");
 	durtimetext = document.getElementById("durtimetext");
@@ -10,7 +14,9 @@ function intializePlayer(){
 	volumeslider = document.getElementById("volumeslider");
 	fullscreenbtn = document.getElementById("fullscreenbtn");
 	
+	rewindButton.addEventListener("click",rewindForward,false);
 	playbtn.addEventListener("click", playPause, false);
+	fastForwardButton.addEventListener("click",fastForward,false);
 	mutebtn.addEventListener("click",vidmute,false);
 	fullscreenbtn.addEventListener("click",toggleFullScreen,false);
     vid.addEventListener("ended", function() {
@@ -33,6 +39,14 @@ function playPause() {
 		vid.pause();
 		playbtn.className = "play";
 	}
+}
+
+function fastForward() {
+	vid.currentTime += 10;
+}
+
+function rewindForward() {
+	vid.currentTime -= 10;
 }
 
 function vidSeek() {
