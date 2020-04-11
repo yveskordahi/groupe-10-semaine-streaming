@@ -74,6 +74,7 @@ button:focus {
     background-color: rgba(0,0,0,0);
     margin-left: 10px;
     padding-top: 4px;
+    background-repeat: no-repeat;
 }
 
 input#seekslider { 
@@ -138,16 +139,27 @@ input[type='range']::-webkit-slider-thumb {
         height: 29px;
         padding: 0;
     }
-
-    #fullscreenbtn {
-        width: 39px;
-        height: 42px;
-        padding: 0;
-    }
 }
 
 @media screen and (max-width: 400px) {
     input#seekslider {
         width: 120px;
+    }
+
+    #playpausebtn {
+        width: 35px;
+        height: 35px;
+    }
+
+    #mutebtn {
+        width: 24px;
+        height: 25px;
+        padding: 0;
+    }
+
+    #fullscreenbtn {
+        width: 35px;
+        height: 36px;
+        padding: 0;
     }
 }
