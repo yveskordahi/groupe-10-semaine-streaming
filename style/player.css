@@ -118,9 +118,13 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 @media screen and (max-width: 750px) {
+    input#seekslider {
+        margin-left: 5px;
+    }
+
     #video_controls_bar {
         padding: 0;
-        font-size: 12px;
+        font-size: 14px;
         display: flex;
         align-items: center;
     }
