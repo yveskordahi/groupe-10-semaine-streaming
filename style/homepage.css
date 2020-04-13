@@ -64,7 +64,7 @@
 
 @media screen and (max-width: 1370px) and (max-height: 768px) {
     .homepage__text-description {
-        bottom: 35%;
+        bottom: 30%;
         width: 40%;
     }
 }
