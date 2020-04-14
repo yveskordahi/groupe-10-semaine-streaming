@@ -12,6 +12,8 @@ button:focus {
     color: #3e9aff;
     font-family: 'Arial';
     width: 90%;
+    display: flex;
+    align-items: center;
 }
 
 #playpausebtn {
