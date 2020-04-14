@@ -9,7 +9,7 @@ button:focus {
 #video_controls_bar { 
     background: #000; 
     padding: 10px; 
-    color: rgb(36, 183, 219); 
+    color: #3e9aff;
     font-family: 'Arial';
     width: 90%;
 }
@@ -108,7 +108,7 @@ input#volumeslider {
 input[type='range'] {
     -webkit-appearance: none !important;
     background: rgb(255, 255, 255);
-	border: rgb(36, 183, 219) 1px solid;
+	border: #3e9aff 1px solid;
     height: 4px;
     cursor: pointer;
 }
