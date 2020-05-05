@@ -36,8 +36,8 @@ button:focus {
 	width: 32px;
 	height: 34px;
 	cursor: pointer;
-    opacity: 0.7;
     background-color: rgba(0,0,0,0);
+    background-repeat: no-repeat;
 }
 
 .play {
@@ -56,20 +56,20 @@ button:focus {
 	width: 32px;
 	height: 34px;
 	cursor: pointer;
-    opacity: 0.7;
     background-color: rgba(0,0,0,0);
+    background-repeat: no-repeat;
 }
 
 #mutebtn {
     background-image: url('../assets/img/mute.svg');
 	border: none;
-	width: 32px;
-	height: 34px;
+	width: 28px;
+    height: 22px;
 	cursor: pointer;
-    opacity: 0.7;
     background-color: rgba(0,0,0,0);
     padding-top: 7px;
     margin-left: 10px;
+    align-self: center;
 }
 
 #mutebtn:hover { 
@@ -89,24 +89,24 @@ button:focus {
 #fullscreenbtn {
     background-image: url('../assets/img/fullscreen.svg');
 	border: none;
-	width: 42px;
-	height: 44px;
+	width: 34px;
+	height: 31px;
 	cursor: pointer;
-    opacity: 0.7;
     background-color: rgba(0,0,0,0);
     margin-left: 10px;
     padding-top: 4px;
     background-repeat: no-repeat;
 }
 
-input#seekslider { 
+/* input#seekslider { 
     width: 180px; 
 
 }
 input#volumeslider { 
     width: 80px;
-}
+} */
 
+/* 
 input[type='range'] {
     -webkit-appearance: none !important;
     background: rgb(255, 255, 255);
@@ -122,7 +122,7 @@ input[type='range']::-webkit-slider-thumb {
     width: 15px;
 	border-radius: 100%;
 	cursor: pointer;
-}
+} */
 
 @media screen and (max-width: 1200px) {
     #video_controls_bar {
@@ -155,19 +155,13 @@ input[type='range']::-webkit-slider-thumb {
     .display-mobile {
         display: none;
     }
-
-    #mutebtn {
-        width: 28px;
-        height: 29px;
-        padding: 0;
-    }
 }
 
 @media screen and (max-width: 400px) {
-    input[type='range']::-webkit-slider-thumb {
+    /* input[type='range']::-webkit-slider-thumb {
         height: 12px;
         width: 12px;
-    }
+    } */
 
     input#seekslider {
         width: 120px;

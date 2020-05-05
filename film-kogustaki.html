@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="style/film.css">
     <link rel="stylesheet" href="style/film-page-style.css">
     <link rel="stylesheet" href="style/player.css">
+    <link rel="stylesheet" href="style/player-style.css">
     <title>Casa Stream</title>
 </head>
 <body>
@@ -71,22 +72,24 @@
         <div class="film__title">
           <h2>Film - Koğuştaki Mucize</h2>
         </div>
-        <div class="film__video">
-          <video id="my_video" class="film__video-setting" poster="assets/img/poster-film-1.jpg">
-            <source src="assets/video/film-turc.mp4">
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-          <div id="video_controls_bar">
-            <button id="rewind" class="rewind">
-            <button id="playpausebtn" class="play"></button>
-            <button id="fast-forward" class="fast-forward"></button>
-            <input id="seekslider" type="range" min="0" max="100" value="0" step="1">
-            <span id="curtimetext">00:00</span> <span class="display-mobile">/</span> <span id="durtimetext" class="display-mobile">00:00</span>
-            <button id="mutebtn" class="mute"></button>
-            <input id="volumeslider" class="display-mobile" type="range" min="0" max="100" value="100" step="1">
-            <button id="fullscreenbtn" class="full"></button>
+        <div class="container__video">
+          <div class="player">
+            <video class="player__video viewer" src="assets/video/film-turc.mp4"></video>
+            <div class="player__controls">
+              <div class="progress">
+               <div class="progress__filled"></div>
+              </div>
+              <button class="player__button toggle" title="Toggle Play">►</button>
+              <div class="prob">
+              <button id="mutebtn" class="mute"></button>
+              <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+              </div>
+              <button id="rewind" data-skip="-10" class="player__button"></button>
+              <button id="fast-forward" data-skip="10" class="player__button"></button>
+              <button id="fullscreenbtn" class="player__button fullscreen"></button>
+            </div>
           </div>
-        </div>
+      </div>
         <div class="film__info">
           <div class="film__info__title">Koğuştaki Mucize</div>
           <div class="film__info__desc">
