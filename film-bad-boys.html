@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="style/film.css">
     <link rel="stylesheet" href="style/film-page-style.css">
     <link rel="stylesheet" href="style/player.css">
+    <link rel="stylesheet" href="style/player-style.css">
     <title>Casa Stream</title>
 </head>
 <body>
@@ -71,7 +72,7 @@
         <div class="film__title">
           <h2>Film - Bad Boys</h2>
         </div>
-        <div class="film__video">
+        <!-- <div class="film__video">
           <video id="my_video" class="film__video-setting" poster="assets/img/poster-film-3.jpg">
             <source src="assets/video/film-turc.mp4">
             Sorry, your browser doesn't support embedded videos.
@@ -86,7 +87,27 @@
             <input id="volumeslider" class="display-mobile" type="range" min="0" max="100" value="100" step="1">
             <button id="fullscreenbtn" class="full"></button>
           </div>
-        </div>
+        </div> -->
+        <div class="container__video">
+          <div class="player">
+            <video class="player__video viewer" src="assets/video/film-turc.mp4" poster="assets/img/poster-film-3.jpg"></video>
+            <div class="player__controls">
+              <div class="progress">
+               <div class="progress__filled"></div>
+              </div>
+              <button class="player__button toggle" title="Toggle Play">►</button>
+              <div class="prob">
+              <button id="mutebtn" class="mute"></button>
+              <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+              </div>
+              <button id="rewind" data-skip="-10" class="player__button"></button>
+              <button id="fast-forward" data-skip="10" class="player__button"></button>
+              <button id="fullscreenbtn" class="player__button fullscreen"></button>
+            </div>
+          </div>
+      </div>
+
+
         <div class="film__info">
           <div class="film__info__title">Bad Boys</div>
           <div class="film__info__desc">
